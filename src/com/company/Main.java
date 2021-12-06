@@ -6,14 +6,14 @@ public class Main
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int Base,Orden ,Resta ,n,m,r , numeroCombinaciones;
+        float Base,Orden ,Resta ,n,m,r , numeroCombinaciones;
 
         System.out.println("Combinatoria Cn,m ");
 
         System.out.print("ingresa n : ");
-        n = input.nextInt();
+        n = input.nextFloat();
         System.out.print("Ingresa m : ");
-        m = input.nextInt();
+        m = input.nextFloat();
 
         Base = Factorial(n);
         Orden = Factorial(m);
@@ -23,9 +23,9 @@ public class Main
 
         System.out.println("las combinaciones de N elementos tomados de M en M es : "+numeroCombinaciones+" Combinaciones");
     }
-    public static int Factorial(int Numero)
+    public static float Factorial(float Numero)
     {
-        int iFactorial = 1;
+        float iFactorial = 1;
 
         for(int x=2; x<=Numero ; x++)
         {
