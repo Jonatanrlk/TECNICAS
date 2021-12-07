@@ -7,13 +7,11 @@ public class Main
     public static void main(String[] args)
     {
 
-
-
     }
     public static int ConvertirdorDeRadianes(double numero )
     {
         Scanner input = new Scanner(System.in);
-        int opcion;
+        int opcion, resultado;
         int grado = ConvertirdorDeRadianes(4.3993);
 
 
@@ -28,15 +26,18 @@ public class Main
 
             System.out.print("Resultado : "+(numerador = input.nextInt())+"/"+(denominador= input.nextInt()));
             division = (double) (numerador / denominador);
+            resultado = (int)(division*Math.PI);
 
-            System.out.print(" = "+((int)(division*Math.PI))+"°");
+            System.out.print(" = "+resultado+"°");
 
         }else
         {
-            int numero=0;
+
             System.out.print("Ingresar Numero : ");
             numero = input.nextInt();
-            System.out.println("Resultado : "+(((int)(numero*Math.PI))/180)+" π rad");
-
+            resultado = (int)((numero*Math.PI)/180);
+            System.out.println("Resultado : "+resultado+" π rad");
+        }
+        return resultado;
     }
 }
