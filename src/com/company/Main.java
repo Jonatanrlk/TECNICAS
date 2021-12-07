@@ -8,7 +8,7 @@ public class Main {
 
         int n, result=0, a,i;
 
-        System.out.println("Digite el numero a elevar al cubo: ");
+        System.out.print("Digite el numero a elevar al cubo: ");
         n = lector.nextInt();
 
         int aux = n*(n-1)/2 + 1;
